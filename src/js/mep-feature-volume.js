@@ -236,10 +236,6 @@
 				volumeSlider.show();
 			});
 
-			mute.find('button').bind('blur', function () {
-				volumeSlider.hide();
-			});
-
 			// listen for volume change events from other sources
 			media.addEventListener('volumechange', function(e) {
 				if (!mouseIsDown) {
