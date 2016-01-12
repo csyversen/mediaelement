@@ -232,8 +232,12 @@
 			});
 
             //Keyboard input
-            mute.find('button').bind('focus', function () {
+      mute.find('button').bind('focus', function () {
 				volumeSlider.show();
+			});
+
+			mute.find('button').bind('blur', function () {
+				volumeSlider.hide();
 			});
 
 			// listen for volume change events from other sources
