@@ -167,7 +167,7 @@ module.exports = function(grunt) {
                 command: function() {
                     grunt.config.set("cdnBuild", 'false');
                     grunt.config.set("debugBuild", 'false');
-                    grunt.config.set("flashOut", 'build/flashmediaelement.swf');
+                    grunt.config.set("flashOut", 'local-build/flashmediaelement.swf');
                     return grunt.config.get("buildFlashCommand");
                 }
             },
